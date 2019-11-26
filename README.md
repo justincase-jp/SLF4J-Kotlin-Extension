@@ -10,7 +10,7 @@ import org.slf4j.LoggerFactory
 
 @PublishedApi
 internal inline val logger
-  get() = LoggerFactory.getLogger(Thread.currentThread().stackTrace[1].className.substringAfterLast('.'))
+  get() = LoggerFactory.getLogger(Thread.currentThread().stackTrace[1].className.substringBefore('$'))
 
 
 inline fun TRACE(throwable: Throwable? = null, message: () -> Any?) = logger.run {
@@ -54,7 +54,7 @@ repositories {
   maven("https://jitpack.io")
 }
 dependencies {
-  implementation("io.github.justincase-jp", "slf4j-kotlin-extension", "1.0.0")
+  implementation("io.github.justincase-jp", "slf4j-kotlin-extension", "1.1.0")
   runtimeOnly("org.slf4j", "slf4j-simple", "1.7.29")
 }
 ```

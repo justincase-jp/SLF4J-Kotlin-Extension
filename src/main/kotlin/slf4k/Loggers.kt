@@ -6,7 +6,7 @@ import org.slf4j.LoggerFactory
 
 @PublishedApi
 internal inline val logger
-  get() = LoggerFactory.getLogger(Thread.currentThread().stackTrace[1].className.substringAfterLast('.'))
+  get() = LoggerFactory.getLogger(Thread.currentThread().stackTrace[1].className.substringBefore('$'))
 
 
 inline fun TRACE(throwable: Throwable? = null, message: () -> Any?) = logger.run {
