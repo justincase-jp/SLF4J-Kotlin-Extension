@@ -51,11 +51,11 @@ Gradle Kotlin DSL
 
 ```gradle
 repositories {
-  jcenter()
+  mavenCentral()
   maven("https://jitpack.io")
 }
 dependencies {
-  implementation("io.github.justincase-jp", "slf4j-kotlin-extension", "1.1.0")
-  runtimeOnly("org.slf4j", "slf4j-simple", "1.7.29")
+  implementation("io.github.justincase-jp", "slf4j-kotlin-extension", "1.4.0")
+  runtimeOnly("org.slf4j", "slf4j-simple", "1.7.30")
 }
 ```
