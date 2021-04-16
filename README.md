@@ -1,5 +1,6 @@
 SLF4J Kotlin Extension
 ====
+[![](https://jitpack.io/v/justincase-jp/SLF4J-Kotlin-Extension.svg)](https://jitpack.io/#justincase-jp/SLF4J-Kotlin-Extension)
 
 Simplest Kotlin logging
 
