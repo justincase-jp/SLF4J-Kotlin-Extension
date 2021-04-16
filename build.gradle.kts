@@ -5,7 +5,7 @@ plugins {
 }
 
 tasks.named<Wrapper>("wrapper") {
-  gradleVersion = "6.0.1"
+  gradleVersion = "6.8.3"
 }
 
 repositories {
