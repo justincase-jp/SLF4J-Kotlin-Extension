@@ -9,7 +9,7 @@ tasks.named<Wrapper>("wrapper") {
 }
 
 repositories {
-  jcenter()
+  mavenCentral()
 }
 dependencies {
   implementation(kotlin("stdlib"))
